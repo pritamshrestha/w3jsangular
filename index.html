@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	   <title>angularjs multipageApp</title>
+	   <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+	   <link rel="stylesheet" href="css/main.css">
+	   <link rel="stylesheet" href="css/bootstrap.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular-route.js"></script>
+
+</head>
+<body>
+<div class="container">
+<div class="row">
+<!-- this is the use of the angular javascript -->
+<div class="col-md-8 col-md-offset-2 col-sm-4 col-sm-offset-4">
+<div ng-app="" class="text-center">
+ <h1>Personal information:</h1>
+ <p><pre>Name:    <input type="text" ng-model="name" placeholder="enter the name"></pre></p><br>
+ <p><pre>Age:     <input type="number" ng-model="age" placeholder="enter the age please"></pre></p><br>
+ <p><pre>Address: <input type="text" ng-model="address" placeholder="enter the valid address"></pre></p><br>
+ <p><pre>Gender:  <input type="text" ng-model="gender" placeholder="enter the gender"></pre></p><br>
+ <p><pre>Email:   <input type="email" ng-model="email" placeholder="enter the valid email"></pre></p>
+
+
+<p>Description:His/her name is: {{name}},age is: {{age}}, address is: {{address}}, gender is: {{gender}} and email is: {{email}}.</p>
+</div>
+<!-- this is the use of the w3.js -->
+<button type="button" onclick="w3.addStyle('pre','color','red'),w3.addStyle('body','background-color','yellow'),w3.addStyle('p','color','green'),w3.addStyle('h1','color','blue')" class="center-block">addStyle</button>
+</div>
+</div><!--this is for the row-->
+</div><!--this is for the container-->
+
+     <script src="js/app.js"></script>
+     <!-- this is for the jquery -->
+     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+     <!-- this is for the new js library -->
+     <script src="js/w3.js"></script>
+     <script src="js/main.js"></script>  
+     <script src="js/bootstrap.js"></script> 
+</body>
+</html>
